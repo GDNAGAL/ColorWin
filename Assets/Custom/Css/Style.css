@@ -1,5 +1,9 @@
 body{
     background-color: #ebebeb;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    user-select: none;
 }
 .main{
     width: 540px;
@@ -8,7 +12,7 @@ body{
 .topnavbar{
     width: 540px;
     height: 50px;
-    background-color: #4781ff;
+    /* background-color: #4781ff; */
     top:0px;
     left:50%;
     transform: translate(-50%);
@@ -41,12 +45,29 @@ body{
     cursor: pointer;
 }
 .gamelist{
-    height: 100px;
+    cursor: pointer;
+    display: flex;
+    width: 100%;
+    height: 90px;
+    background: rgb(10,49,129);
+    background: linear-gradient(47deg, rgba(10,49,129,0.9921218487394958) 0%, rgba(69,110,197,1) 39%, rgba(162,192,255,1) 100%);
+    color: white;
 }
-.gamelist img{
+.gamelist .title{
+    width: 80%;
+    padding: 10px;
+}
+.gamelist .title p{
+    font-size: 12px;
+}
+.gamelist .image img{
     height: 100%;
 }
 
+.recentwinnerlist{
+    height: 55px;
+    vertical-align: baseline;
+}
 
 
 
