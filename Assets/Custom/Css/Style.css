@@ -1,0 +1,65 @@
+body{
+    background-color: #ebebeb;
+}
+.main{
+    width: 540px;
+    margin: auto;
+}
+.topnavbar{
+    width: 540px;
+    height: 50px;
+    background-color: #4781ff;
+    top:0px;
+    left:50%;
+    transform: translate(-50%);
+    vertical-align: baseline;
+    z-index: 100;
+}
+.navlogo{
+    height: 100%;
+    position: absolute;
+    left: 15px;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+}
+.navlogo img{
+    vertical-align: baseline;
+    height: 100%;
+}
+.content-right{
+    position: absolute;
+    right: 15px;
+    top: 0;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.content-right i{
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+.gamelist{
+    height: 100px;
+}
+.gamelist img{
+    height: 100%;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .main{
+        width: 100%;
+    }
+    .topnavbar{
+        width: 100%;
+        left:0;
+        transform: none;
+    }
+  }
