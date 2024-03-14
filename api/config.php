@@ -95,4 +95,21 @@ function getUserIP() {
   return $ip;
 }
 
+
+function generateRandomName($length = 8) {
+  $characters = 'abcdefghijklmnopqrstuvwxyz';
+  $name = '';
+  for ($i = 0; $i < $length; $i++) {
+      $name .= $characters[rand(0, strlen($characters) - 1)];
+  }
+  return ucfirst($name); 
+}
+
+function createRandomReferCode(){
+  $random_number = rand(10000000, 99999999);
+  $current_timestamp = time();
+  $unique_id = $random_number + $current_timestamp;
+  return substr($unique_id,-8);
+}
+
 ?>
